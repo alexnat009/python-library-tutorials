@@ -8,7 +8,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.pipeline import make_pipeline
 
-df = pd.read_csv("../../../datasets/adult-census.csv")
+df = pd.read_csv("../../datasets/adult-census.csv")
 
 df = df.drop(columns="education-num")
 X = df.drop(columns='class')

@@ -6,7 +6,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import train_test_split, cross_validate
 from sklearn.ensemble import HistGradientBoostingClassifier
 
-df = pd.read_csv('../../../datasets/adult-census.csv')
+df = pd.read_csv('../../datasets/adult-census.csv')
 
 df = df.drop(columns="education-num")
 target_name = "class"

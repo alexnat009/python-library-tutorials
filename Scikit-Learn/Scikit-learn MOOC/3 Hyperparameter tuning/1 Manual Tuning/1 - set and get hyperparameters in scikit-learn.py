@@ -5,7 +5,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import cross_validate
 
-df = pd.read_csv("../../../datasets/adult-census.csv")
+df = pd.read_csv("../../datasets/adult-census.csv")
 target_name = "class"
 numerical_columns = ["age", "capital-gain", "capital-loss", "hours-per-week"]
 

@@ -8,7 +8,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
-df = pd.read_csv("../../datasets/blood_transfusion.csv")
+df = pd.read_csv("../datasets/blood_transfusion.csv")
 
 target_name = "Class"
 X = df.drop(columns=target_name)

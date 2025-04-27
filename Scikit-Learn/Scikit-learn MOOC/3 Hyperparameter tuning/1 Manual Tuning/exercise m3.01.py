@@ -6,7 +6,7 @@ from sklearn.preprocessing import OrdinalEncoder
 from sklearn.ensemble import HistGradientBoostingClassifier
 from sklearn.pipeline import Pipeline
 
-df = pd.read_csv("../../../datasets/adult-census.csv")
+df = pd.read_csv("../../datasets/adult-census.csv")
 
 target_name = "class"
 

@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv('../../../datasets/adult-census.csv')
+df = pd.read_csv('../../datasets/adult-census.csv')
 
 target_column = "class"
 print(df[target_column].value_counts())

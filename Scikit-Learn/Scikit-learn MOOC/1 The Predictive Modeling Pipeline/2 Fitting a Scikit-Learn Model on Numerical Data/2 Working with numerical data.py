@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 
-df = pd.read_csv("../../../datasets/adult-census.csv")
+df = pd.read_csv("../../datasets/adult-census.csv")
 # drop the duplicated column `"education-num"` as stated in the first notebook
 df = df.drop(columns="education-num")
 print(df.head())

@@ -5,7 +5,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import cross_validate
 import pandas as pd
 
-df = pd.read_csv("../../../datasets/adult-census.csv")
+df = pd.read_csv("../../datasets/adult-census.csv")
 
 df = df.drop(columns="education-num")
 X = df.drop(columns='class')

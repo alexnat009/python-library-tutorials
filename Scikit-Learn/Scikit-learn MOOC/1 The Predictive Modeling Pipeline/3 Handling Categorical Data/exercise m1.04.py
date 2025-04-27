@@ -6,7 +6,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.dummy import DummyClassifier
 import pandas as pd
 
-df = pd.read_csv('../../../datasets/adult-census.csv')
+df = pd.read_csv('../../datasets/adult-census.csv')
 target_name = "class"
 X = df.drop(columns=[target_name, "education-num"])
 y = df[target_name]

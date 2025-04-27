@@ -7,7 +7,7 @@ from sklearn.preprocessing import OrdinalEncoder, StandardScaler, OneHotEncoder
 from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import cross_validate
 
-df = pd.read_csv('../../../datasets/adult-census.csv')
+df = pd.read_csv('../../datasets/adult-census.csv')
 
 df = df.drop(columns="education-num")
 target_name = "class"

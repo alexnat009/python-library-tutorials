@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 
 import pandas as pd
 
-df = pd.read_csv('../../../datasets/blood_transfusion.csv')
+df = pd.read_csv('../../datasets/blood_transfusion.csv')
 
 X = df.drop(columns="Class")
 y = df["Class"]

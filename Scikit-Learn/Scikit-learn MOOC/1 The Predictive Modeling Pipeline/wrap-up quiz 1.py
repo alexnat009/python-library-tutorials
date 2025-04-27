@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.pipeline import make_pipeline
 import matplotlib.pyplot as plt
 
-ames_housing = pd.read_csv("../../datasets/ames_housing_no_missing.csv")
+ames_housing = pd.read_csv("../datasets/ames_housing_no_missing.csv")
 
 target_name = "SalePrice"
 X = ames_housing.drop(columns=target_name)

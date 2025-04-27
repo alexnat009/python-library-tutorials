@@ -7,7 +7,7 @@ from sklearn.preprocessing import OrdinalEncoder
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("../../../datasets/adult-census.csv")
+df = pd.read_csv("../../datasets/adult-census.csv")
 
 target_name = "class"
 y = df[target_name]

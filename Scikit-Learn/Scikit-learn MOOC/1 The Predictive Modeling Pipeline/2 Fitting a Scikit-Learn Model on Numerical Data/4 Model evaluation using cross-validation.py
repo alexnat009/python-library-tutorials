@@ -4,7 +4,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import cross_validate, train_test_split
 import pandas as pd
 
-df = pd.read_csv("../../../datasets/adult-census.csv")
+df = pd.read_csv("../../datasets/adult-census.csv")
 
 df = df.drop(columns="education-num")
 X = df.drop(columns='class')

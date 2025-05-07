@@ -1,0 +1,26 @@
+1) Linear models such as logistic regression can be used for classification on non-linearly
+separable datasets by leveraging non-linear feature engineering
+
+2) Transformers such as KBinsDiscretizer and SplineTransformer can be used to engineer
+non-linear features independently for each original feature
+
+3) As a result, these transformers cannot capture interaction between the original features
+(and then would fail on the XOR classification task)
+
+4) Despite this limitation they already augment the expressivity of the pipeline, which can
+be sufficient for some datasets
+
+5) They also favor axis-aligned decision boundaries, in particular in the low density regions
+of the feature space (axis-aligned extrapolation)
+
+6) Transformers such as PolynomialFeatures and Nystroem ca be used to engineer non-linear features
+that capture interactions between the original features
+
+7) It can be useful to combine several features engineering transformers in a single pipeline to
+build a more expressive model, for instance to favor axis-aligned extrapolation while also capturing
+interaction
+
+8) If the original dataset has both numerical and categorical features, it can be useful to apply
+binning or a spline transformation to the numerical features and one-hot-encoding to the categorical features.
+Then the resulting features can be combined with a kernel approximation to model interaction between numerical
+and categorical features. THis ca be achieved with the help of ColumnTransformer
